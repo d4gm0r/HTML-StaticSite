@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- Nathan Larsen - A01532780 - Handcoded HTML Static Site -->
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Unix Shell Commands</title>
+    <style type="text/css">
+        p{
+            text-indent: 10px;
+        }
+        .center{
+            text-align: center;
+            font-family: cursive;
+        }
+        .tableHead {
+            font-size: 140%;
+            font-weight: bold;
+            text-align: center;
+        }
+        .vertical{
+            vertical-align:sub;
+            font-size:90%;
+            font-family: sans;
+        }
+        body{
+            background-image: url("background.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            font-size: 110%;
+            color: black;
+        }
+        .remove{
+            font-size: 0pt;
+        }
+        div{
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            width: 350px;
+            border-spacing: 5px;
+        }
+        th {
+            padding: 15px;
+            font-size: 130%;
+            color: black;
+            background-color: rgba(135, 206, 250, 0.5);
+        }
+        td{
+            font-family: monospace;
+            padding: 10px;
+            font-size: 120%;
+            text-align: right;
+        }
+        /*tbody > tr:first-child:hover{
+            background-color: red;
+        }*/
+        tbody > tr:nth-child(even){
+            background-color: rgba(135, 206, 250, .05);
+        }
+        tbody > tr:hover{
+            background-color: #696d72;
+            color: white;
+            font-weight: bold;
+        }
+        .tableEnd{
+            font-family: sans;
+            font-size: 14pt;
+        }
+        a:visited {
+            color: #A80000;
+        }
+        img:first-of-type:hover{
+            transform: scale(1.5);
+        }
+        .unix{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dino:hover {
+            animation-duration: 10s;
+            animation-name: slide;
+            animation-iteration-count: infinite;
+        }
+        @keyframes slide {
+            from {
+                transform: translate(375%, 0);
+            }
+
+            to {
+                transform: translate(-100%,0)
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <h1>Unix Shell Commands</h1>
+    <h2>Cheat-Sheet</h2>
+    <h4>By Nathan Larsen</h4>
+</div>
+
+<p>Familiarity with unix shell commands is essential to my continued "survival" in this class. The following list is by no means comprehensive, but is composed of some of the commands I consider absolutely fundamental to the operation of the command line.</p>
+
+<p>I hope one day to be able to say this:</p>
+
+<img class="unix" src="JurassicUnix.gif" alt="gif not available, sorry!" style="width:500px;height:250px;">
+<p class="center">"It's a unix system. I know this!"<span class="vertical"> -That one girl from Jurassic Park </span> </p>
+
+<p>I therefore present this guide or cheat-sheet on unix commands.</p>
+<p>The table below lists the commands, then provides a short description of what the command does.</p>
+
+
+<p class="tableHead">---------UNIX SHELL COMMANDS----------</p>
+<table>
+    <thead>
+    <tr>
+        <th>Command</th>
+        <th>Example</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tr>
+        <td>cd</td>
+        <td><p>cd user</p>
+            cd..</td>
+        <td class="tableEnd"><p>changes the directory to user</p>
+            move back one directory in the path</td>
+    </tr>
+    <tr>
+        <td>ls</td>
+        <td>ls</td>
+        <td class="tableEnd">list all files in current directory</td>
+    </tr>
+    <tr>
+        <td>mkdir</td>
+        <td>mkdir example<span class="remove"> | rmdir example</span></td>
+        <td class="tableEnd">creates a directory named example</td>
+    </tr>
+    <tr>
+        <td>rmdir</td>
+        <td>rmdir example</td>
+        <td class="tableEnd">removes example directory</td>
+    </tr>
+    <tr>
+        <td>rm</td>
+        <td>rm examplefile.txt</td>
+        <td class="tableEnd">deletes specified file</td>
+    </tr>
+    <tr>
+        <td>cp</td>
+        <td>cp examplefile exampledirectory</td>
+        <td class="tableEnd">copies specified file into specified directory</td>
+    </tr>
+    <tr>
+        <td>mv</td>
+        <td>mv first.txt second.txt</td>
+        <td class="tableEnd">rename or move specified file</td>
+    </tr>
+</table>
+
+<img class="dino" src="dino.gif" alt="gif not available, sorry!" style="width:400px;height:400px;">
+
+<p>You can find a more comprehensive list of unix commands <a href="https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html">here</a> and <a href="https://www.tutorialspoint.com/unix/unix-useful-commands.htm">here</a>.</p>
+
+</body>
+</html>
